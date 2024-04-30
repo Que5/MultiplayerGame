@@ -26,7 +26,7 @@ answer_3 = "paris"
 question_4 = "What is the highest mountain in the world?"
 answer_4 = "mount everest"
 
-# Total number of questions (easier to modify)
+# Total number of questions
 total_questions = 4
 
 # Individual player scores
@@ -63,65 +63,6 @@ print(f"{player_1}: {player_1_score} out of {total_questions}")
 print(f"{player_2}: {player_2_score} out of {total_questions}")
 
 print("\nThank you for playing!")
-import random
-# Online Python - IDE, Editor, Compiler, Interpreter
-
-print("Welcome to Trivia players! 2 players should play this game!")
-player_1 =input("What is your name Player 1?")
-player_2 =input("What is your name Player 2?")
-
-toss_up= input(player_1 + " Please press 1 to randomly choose who starts!")
-
-if toss_up == "1":
-    decider = random.randint(0,2)
-    if decider == 0:
-        print(player_1 + " should start!")
-    else:
-        print(player_2 + " should start!")
-else:
-    print("Invalid choice")
 
 
-ans = input("Are you ready to play? Yes or no?:")
-score = 0
-total_que = 4
-
-if ans.lower() == "yes":
-    ans = input("1. What is the best programming language?:")
-    if ans.lower() == "python":
-        score += 1
-        print("Correct")
-    else:
-        print("Incorrect")
-        
-    ans = input("2. Who is the God:")
-    if ans.lower() == "phumlani":
-        score += 1
-        print("Correct")
-    else:
-        print("Incorrect")
-        
-    ans = input("3. What is the best city in the world?:")
-    if ans.lower() == "nelspruit":
-        score += 1
-        print("Correct")
-    else:
-        print("Incorrect")
-    
-    ans = input("4. Who is the best woman on earth?:")
-    if ans.lower() == "kgaugelo":
-        score += 1
-        print("Correct")
-    else:
-        print("Incorrect")
-        
-        
-    print("Thank you for playing, you got" ,score, "questions correct!")
-    mark = (score / total_que  * 100)
-    print("Your mark is" ,mark, "% " "!")
-    
-else:
-    print("See you next time!")
-    
-    
 
